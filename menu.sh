@@ -1,6 +1,12 @@
 #!/system/bin/sh
 # menu-9-columns.sh – Toggle 9 named features in two-column menu
 
+if ! [[ "$SHELL" == "/bin/sh" || "$USER" == "shell" || "$(whoami)" == "shell" ]]; then
+    echo ""
+    echo -e "\e[1;91mShizuku not running on Terminal\e[0m"
+    echo ""
+fi
+
 CFG="/data/local/tmp/cfg"
 
 # Custom feature names
