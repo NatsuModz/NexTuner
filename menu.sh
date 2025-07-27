@@ -18,9 +18,12 @@ features=("Battery Restrictions" "Memory Tweaks" "Responsive Touch" "GPU Optimiz
 while true; do
   source "$CFG"  # load state array
 
-  echo
-  echo "Menu"
+  echo -e "\e[1;96m
+█▄─▀█▄─▄█▄─▄▄─█▄─▀─▄█─▄─▄─█▄─██─▄█▄─▀█▄─▄█▄─▄▄─█▄─▄▄▀█
+██─█▄▀─███─▄█▀██▀─▀████─████─██─███─█▄▀─███─▄█▀██─▄─▄█
+▀▄▄▄▀▀▄▄▀▄▄▄▄▄▀▄▄█▄▄▀▀▄▄▄▀▀▀▄▄▄▄▀▀▄▄▄▀▀▄▄▀▄▄▄▄▄▀▄▄▀▄▄▀\e[0m"
 
+    echo ""
   # Print items in two columns: first column is i=0..4, second column is i=5..9
   for i in 0 1 2 3 4; do
     # left column
